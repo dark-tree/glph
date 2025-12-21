@@ -36,7 +36,7 @@ if (NOT OpenAL_FOUND)
 	FetchContent_Declare(
 			openal-soft
 			GIT_REPOSITORY https://github.com/kcat/openal-soft
-			GIT_TAG 1.23.1
+			GIT_TAG 1.24.3
 			GIT_PROGRESS TRUE
 	)
 
@@ -45,7 +45,7 @@ endif()
 
 FetchContent_Declare(
 		glfw
-		GIT_REPOSITORY https://github.com/glfw/glfw.git
+		GIT_REPOSITORY https://github.com/glfw/glfw
 		GIT_TAG 3.4
 		GIT_PROGRESS TRUE
 )
@@ -53,21 +53,21 @@ FetchContent_Declare(
 FetchContent_Declare(
 		vma
 		GIT_REPOSITORY https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator
-		GIT_TAG v3.0.1
+		GIT_TAG v3.3.0
 		GIT_PROGRESS TRUE
 )
 
 FetchContent_Declare(
 		stb
 		GIT_REPOSITORY https://github.com/nothings/stb
-		GIT_TAG 5736b15f7ea0ffb08dd38af21067c314d6a3aae9
+		GIT_TAG f1c79c02822848a9bed4315b12c8c8f3761e1296
 		GIT_PROGRESS TRUE
 )
 
 FetchContent_Declare(
 		glm
 		GIT_REPOSITORY https://github.com/g-truc/glm
-		GIT_TAG 0.9.9.8
+		GIT_TAG 1.0.2
 		GIT_PROGRESS TRUE
 )
 
@@ -81,7 +81,7 @@ FetchContent_Declare(
 FetchContent_Declare(
 		ankerl
 		GIT_REPOSITORY https://github.com/martinus/unordered_dense
-		GIT_TAG v4.4.0
+		GIT_TAG v4.8.1
 		GIT_PROGRESS TRUE
 )
 
@@ -95,21 +95,21 @@ FetchContent_Declare(
 FetchContent_Declare(
 		vstl
 		GIT_REPOSITORY https://github.com/magistermaks/lib-vstl
-		GIT_TAG v3.1
+		GIT_TAG v3.4
 		GIT_PROGRESS TRUE
 )
 
 FetchContent_Declare(
 		json
 		GIT_REPOSITORY https://github.com/nlohmann/json
-		GIT_TAG v3.11.3
+		GIT_TAG v3.12.0
 		GIT_PROGRESS TRUE
 )
 
 FetchContent_Declare(
 		shaderc
 		GIT_REPOSITORY https://github.com/google/shaderc
-		GIT_TAG v2023.4
+		GIT_TAG v2023.4 # Updating this break everything, TODO ditch shaderc
 		GIT_PROGRESS TRUE
 )
 
